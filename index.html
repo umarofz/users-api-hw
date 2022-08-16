@@ -8,26 +8,51 @@
   <title>Document</title>
 </head>
 <body>
-  <header class="header">
-    <div class="container">
-      <div class="header__container"></div>
+  <div class="container row">
+    <div class="col-4">
+      <h2>Users</h2>
+      
+      <ul class="users__list list-unstyled"></ul>
     </div>
-  </header>
-
-  <main class="main">
-    <section class="hero">
-      <div class="container">
-        <div class="hero__container"></div>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="container">
-      <div class="footer__container"></div>
+    <div class="col-4">
+      <h2>Posts</h2>
+      
+      <ul class="posts__list"></ul>
     </div>
-  </footer>
-
+    <div class="col-4">
+      <h2>Comments</h2>
+      
+      <ul class="comments__list">
+        
+      </ul>
+    </div>
+  </div>
+  
+  <template id="users__template">
+    <li>
+      <a class="btn btn-primary user__link m-1" href="#">
+        
+      </a>
+    </li>
+  </template>
+  
+  <template id="post__template">
+    <li class="card">
+      <p class="post__id">1</p>
+      <a class="btn btn-primary post__link m-1" href="#">Hello World</a>
+      <p class="bg-warning post__body m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, consectetur.</p>
+    </li>
+  </template>
+  
+  <template id="comment__template">
+    <li class="card">
+      <h4 class="card__email bg-info">Email: <span class="span__email">temp@temp.temp</span></h4>
+      
+      <h4 class="card__comment bg-warning">Comment: <span class="span__comment">comment</span></h4>
+    </li>
+  </template>
+  
   <script src="./js/bootstrap.js"></script>
+  <script src="./js/main.js"></script>
 </body>
 </html>
