@@ -29,26 +29,26 @@
   </div>
   
   <template id="users__template">
-    <li>
-      <a class="btn btn-primary user__link m-1" href="#">
-        
-      </a>
+    <li class="user__item card" style="cursor: pointer; width: 200px;">
+      <p class="text">Name: <span class="name__span"></span></p>
+      <p class="text2">Username: <span class="username__span"></span></p>
+      <p class="text3">Email: <a href="#"><span class="email__span"></span></a></p>
     </li>
   </template>
   
   <template id="post__template">
-    <li class="card">
-      <p class="post__id">1</p>
-      <a class="btn btn-primary post__link m-1" href="#">Hello World</a>
-      <p class="bg-warning post__body m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, consectetur.</p>
+    <li class="card post__item">
+      <a class="post__link m-1" href="#">Hello World</a>
+      <h5 class="post__heading m-1">Post: <span class="post__body h6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi, consectetur.</span></h5>
     </li>
   </template>
   
   <template id="comment__template">
     <li class="card">
-      <h4 class="card__email bg-info">Email: <span class="span__email">temp@temp.temp</span></h4>
+      <h5 class="card__email">Title: <span class="span__title h6">Hello World</span></h5>
+      <h5 class="card__email">Email: <a href="#" style="font-weight: 400;"><span class="span__email">temp@temp.temp</span></a></h5>
       
-      <h4 class="card__comment bg-warning">Comment: <span class="span__comment">comment</span></h4>
+      <h5 class="card__comment">Comment: <span class="span__comment" style="font-weight: 400; font-size: 16px;">comment</span></h5>
     </li>
   </template>
   
